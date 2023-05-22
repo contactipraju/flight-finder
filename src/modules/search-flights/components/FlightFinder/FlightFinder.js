@@ -56,11 +56,31 @@ class FlightFinder extends React.Component {
 		super(props);
 
 		this.state = {
+			origin: {},
+			destination: {}
 		};
+
+		this.selectedOrigin = this.selectedOrigin.bind(this);
+		this.selectedDestination = this.selectedDestination.bind(this);
+		this.searchRoutes = this.searchRoutes.bind(this);
 	}
 
-	searchRoutes(origin, destination) {
-		//
+	selectedOrigin(event, value) {
+		console.log('selectedOrigin: ', event, value);
+		this.setState(prev => ({
+			origin: value
+		}));
+	}
+
+	selectedDestination(event, value) {
+		console.log('selectedDestination: ', event, value);
+		this.setState(prev => ({
+			destination: value
+		}));
+	}
+
+	searchRoutes() {
+		console.log('Searching routes for: ', this.state['origin'], this.state['destination']);
 	}
 
 	render() {
@@ -73,6 +93,7 @@ class FlightFinder extends React.Component {
 							disablePortal
 							id="select-origin"
 							options={destinations}
+							onChange={this.selectedOrigin}
 							sx={{ width: 200 }}
 							renderInput={(params) => <TextField {...params} label="Origin" />}
 						/>
@@ -82,12 +103,13 @@ class FlightFinder extends React.Component {
 							disablePortal
 							id="select-destination"
 							options={destinations}
+							onChange={this.selectedDestination}
 							sx={{ width: 200 }}
 							renderInput={(params) => <TextField {...params} label="Destination" />}
 						/>
 					</div>
 					<div className="input">
-						<Button className="find" variant="contained"> Find Routes </Button>
+						<Button className="find" variant="contained" onClick={this.searchRoutes}> Search Routes </Button>
 					</div>
 				</div>
 				<div className="results">
