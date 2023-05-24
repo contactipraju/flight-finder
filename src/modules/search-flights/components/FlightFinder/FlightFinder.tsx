@@ -24,7 +24,7 @@ let destinations = [
 ];
 
 destinations = destinations.map(dest => ({ ...dest, label: dest.id + ' - ' + dest.name }));
-
+/*
 const FlightDistances = [
 //	  ADL,  ASP,  BNE,  CNS,  CBR,  DRW,  OOL,  HBA,  MEL,  NTL,  PER,  MCY,  SYD,  TSV
 	[   0, 1330, 1602, 2126,  971, 2609, 2618, 1162,  655, 1162, 2135, 1670, 1165, 1919], // ADL
@@ -42,6 +42,7 @@ const FlightDistances = [
 	[1165, 2021,  731, 1966,  247, 3144,  678, 1056,  714,  142, 3297,  835,    0, 1686], // SYD
 	[1919, 1424, 1110,  283, 1795, 1861, 1202, 2616, 2050, 1583, 3382, 1041, 1686,    0]  // TSV
 ];
+*/
 
 interface FlightsInfo {
 	id: string;
