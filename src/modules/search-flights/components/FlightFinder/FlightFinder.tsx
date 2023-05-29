@@ -1,10 +1,10 @@
 import React from "react";
 
-import './FlightFinder.scss';
-
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import Button from '@mui/material/Button';
+
+import './FlightFinder.scss';
 
 let destinations = [
 	{ id: 'ADL', name: 'Adelaide' },
@@ -241,7 +241,12 @@ class FlightFinder extends React.Component {
 							<div key={item.id}>{item.origin} - {item.destination} - {item.departure} - {item.arrival}</div>
 						)) : <div>No services found</div> }
 					</div>
-
+				</div>
+				<div className="all-flights">
+					<div>Displaying all flights data: </div>
+					{flights!.length > 0 ? flights!.map((item: FlightsInfo) => (
+						<div key={item.id}>{item.origin} - {item.destination} - {item.departure} - {item.arrival}</div>
+					)) : <div>No services found</div> }
 				</div>
 			</div>
 		);

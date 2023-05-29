@@ -1,0 +1,18 @@
+{
+	"data": [
+		{ "id": "ADL", "name": "Adelaide" },
+		{ "id": "ASP", "name": "Alice Springs" },
+		{ "id": "BNE", "name": "Brisbane" },
+		{ "id": "CNS", "name": "Cairns" },
+		{ "id": "CBR", "name": "Canberra" },
+		{ "id": "DRW", "name": "Darwin" },
+		{ "id": "OOL", "name": "Gold Coast" },
+		{ "id": "HBA", "name": "Hobart" },
+		{ "id": "MEL", "name": "Melbourne" },
+		{ "id": "NTL", "name": "Newcastle" },
+		{ "id": "PER", "name": "Perth" },
+		{ "id": "MCY", "name": "Sunshine Coast" },
+		{ "id": "SYD", "name": "Sydney" },
+		{ "id": "TSV", "name": "Townsville" }
+	]
+}
