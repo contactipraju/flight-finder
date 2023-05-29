@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import { getFlights, getDestinations } from "./SearchFlights.service";
 
-import FlightFinder from './components/FlightFinder/FlightFinder';
+//import FlightFinder from './components/FlightFinder/FlightFinder';
 import FlightFinderFunctional from './components/FlightFinderFunctional/FlightFinderFunctional';
 
 import './SearchFlightsPage.scss';
