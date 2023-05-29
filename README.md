@@ -1,5 +1,18 @@
 # Flight-Finder
-Find the best trips between destinations, based on Time, Distance, Fare, Minimum stops etc
+Find the best trips between destinations, based on: Time, Distance, Fare, Minimum stops etc
+
+Using:
+* TypeScript
+* React
+* Functional Components
+* React Hooks
+* Axios
+
+ToDo:
+* React Router
+* REDUX(?)
+* React Query
+* React Native
 
 # App Deployed at
 https://flight-finder-360.web.app

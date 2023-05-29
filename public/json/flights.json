@@ -1,0 +1,27 @@
+{
+	"data": [
+		{ "id": "1001", "origin": "SYD", "destination": "BNE", "departure": "2023-07-05T12:00:00-06:30", "arrival": "2023-07-25T12:00:00-08:30" },
+		{ "id": "1002", "origin": "SYD", "destination": "MEL", "departure": "2023-07-05T12:00:00-06:10", "arrival": "2023-07-25T12:00:00-08:30" },
+		{ "id": "1003", "origin": "SYD", "destination": "CBR", "departure": "2023-07-05T12:00:00-06:50", "arrival": "2023-07-25T12:00:00-07:30" },
+		{ "id": "1004", "origin": "MEL", "destination": "BNE", "departure": "2023-07-05T12:00:00-09:30", "arrival": "2023-07-25T12:00:00-12:30" },
+		{ "id": "1005", "origin": "MEL", "destination": "PER", "departure": "2023-07-05T12:00:00-11:30", "arrival": "2023-07-25T12:00:00-14:30" },
+		{ "id": "1006", "origin": "MEL", "destination": "HBA", "departure": "2023-07-05T12:00:00-15:30", "arrival": "2023-07-25T12:00:00-16:30" },
+		{ "id": "1007", "origin": "BNE", "destination": "DRW", "departure": "2023-07-05T12:00:00-06:30", "arrival": "2023-07-25T12:00:00-08:30" },
+		{ "id": "1008", "origin": "BNE", "destination": "CNS", "departure": "2023-07-05T12:00:00-08:30", "arrival": "2023-07-25T12:00:00-09:30" },
+		{ "id": "1009", "origin": "ADL", "destination": "PER", "departure": "2023-07-05T12:00:00-06:00", "arrival": "2023-07-25T12:00:00-09:30" },
+		{ "id": "1010", "origin": "PER", "destination": "TSV", "departure": "2023-07-05T12:00:00-16:15", "arrival": "2023-07-25T12:00:00-17:30" },
+		{ "id": "1101", "origin": "DRW", "destination": "BNE", "departure": "2023-07-05T12:00:00-06:30", "arrival": "2023-07-25T12:00:00-08:30" },
+		{ "id": "1102", "origin": "ASP", "destination": "SYD", "departure": "2023-07-05T12:00:00-06:10", "arrival": "2023-07-25T12:00:00-08:30" },
+		{ "id": "1103", "origin": "CNS", "destination": "BNE", "departure": "2023-07-05T12:00:00-06:50", "arrival": "2023-07-25T12:00:00-07:30" },
+		{ "id": "1104", "origin": "SYD", "destination": "ASP", "departure": "2023-07-05T12:00:00-09:30", "arrival": "2023-07-25T12:00:00-12:30" },
+		{ "id": "1105", "origin": "CBR", "destination": "SYD", "departure": "2023-07-05T12:00:00-11:30", "arrival": "2023-07-25T12:00:00-14:30" },
+		{ "id": "1106", "origin": "BNE", "destination": "MEL", "departure": "2023-07-05T12:00:00-15:30", "arrival": "2023-07-25T12:00:00-16:30" },
+		{ "id": "1107", "origin": "BNE", "destination": "SYD", "departure": "2023-07-05T12:00:00-06:30", "arrival": "2023-07-25T12:00:00-08:30" },
+		{ "id": "1108", "origin": "HBA", "destination": "MEL", "departure": "2023-07-05T12:00:00-08:30", "arrival": "2023-07-25T12:00:00-09:30" },
+		{ "id": "1109", "origin": "MEL", "destination": "ADL", "departure": "2023-07-05T12:00:00-06:00", "arrival": "2023-07-25T12:00:00-09:30" },
+		{ "id": "1110", "origin": "ADL", "destination": "MEL", "departure": "2023-07-05T12:00:00-16:15", "arrival": "2023-07-25T12:00:00-17:30" },
+		{ "id": "1201", "origin": "PER", "destination": "ADL", "departure": "2023-07-05T12:00:00-15:30", "arrival": "2023-07-25T12:00:00-16:30" },
+		{ "id": "1202", "origin": "TSV", "destination": "PER", "departure": "2023-07-05T12:00:00-06:30", "arrival": "2023-07-25T12:00:00-08:30" },
+		{ "id": "1203", "origin": "PER", "destination": "ADL", "departure": "2023-07-05T12:00:00-08:30", "arrival": "2023-07-25T12:00:00-09:30" }
+	]
+}
