@@ -1,0 +1,50 @@
+
+nav {
+	display: flex;
+	height: 100px;
+
+	gap: 2rem;
+	padding: 0 1rem;
+
+	color: white;
+	background-color: #444;
+
+	align-items: stretch;
+	justify-content: space-between;
+
+	.site-title {
+		display: flex;
+		align-items: center;
+
+		color: inherit;
+		font-size: 2rem;
+	}
+
+	ul {
+		display: flex;
+		list-style: none;
+
+		gap: 1rem;
+		margin: 0;
+		padding: 0;
+
+		a.hover {
+			background-color: #777;
+		}
+
+		a.active {
+			background-color: #555;
+		}
+
+		a {
+			display: flex;
+			height: 100%;
+			padding: .25rem;
+	
+			text-decoration: none;
+			align-items: center;
+	
+			color: inherit;
+		}
+	}
+}
