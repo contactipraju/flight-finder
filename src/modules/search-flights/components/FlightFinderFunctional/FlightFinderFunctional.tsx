@@ -15,25 +15,50 @@ function FlightFinderFunctional(props: FunctionProps) {
 	const [origin, setOrigin] = useState('');
 	const [destination, setDestination] = useState('');
 	const [routes, setRoutes] = useState<FlightsInfo[]>([]);
+	const [disabled, setDisabled] = useState(true);
+	const [message, setMessage] = useState('');
 
 	const selectedOrigin = (event: any, value: any) => {
 		console.log('selectedOrigin: ', event, value);
-		value && value['id'] ? setOrigin(value['id']) : setOrigin('');
+
+		if (value && value['id']) {
+			setOrigin(value['id']);
+			if (destination && destination.length) {
+				setDisabled(false);
+			}
+		} else {
+			setOrigin('');
+			setDisabled(true);
+		}
+		setMessage('');
 	}
 
 	const selectedDestination = (event: any, value: any) => {
 		console.log('selectedDestination: ', event, value);
-		value && value['id'] ? setDestination(value['id']) : setDestination('');
+
+		if (value && value['id']) {
+			setDestination(value['id']);
+			if (origin && origin.length) {
+				setDisabled(false);
+			}
+		} else {
+			setDestination('');
+			setDisabled(true);
+		}
+		setMessage('');
 	}
 
 	const searchRoutes = () => {
 		console.log('searchRoutes: ', origin, destination, props.flights);
+		setMessage('Finding routes...');
 		setRoutes(findRoutes(origin, destination, props.flights));
+		setMessage('No services found');
 	}
 
 	return (
 		<div id="flight-finder">
 			<h2 className="component-title"> Flight Finder </h2>
+			<div className="desc"> Find shortest routes between destinations using Breadh First Search (bfs)</div>
 			<div className="inputs">
 				<div className="input">
 					<Autocomplete
@@ -42,7 +67,7 @@ function FlightFinderFunctional(props: FunctionProps) {
 						options={myDestinations}
 						onChange={selectedOrigin}
 						sx={{ width: 200 }}
-						renderInput={(params) => <TextField {...params} label="Origin" />}
+						renderInput={(params) => <TextField {...params} label="Select Origin" />}
 					/>
 				</div>
 				<div className="input">
@@ -52,11 +77,12 @@ function FlightFinderFunctional(props: FunctionProps) {
 						options={myDestinations}
 						onChange={selectedDestination}
 						sx={{ width: 200 }}
-						renderInput={(params) => <TextField {...params} label="Destination" />}
+						renderInput={(params) => <TextField {...params} label="Select Destination" />}
 					/>
 				</div>
 				<div className="input">
 					<Button className="find" variant="contained" 
+						disabled={disabled}
 						onClick={searchRoutes}
 					> Search Routes </Button>
 				</div>
@@ -65,14 +91,14 @@ function FlightFinderFunctional(props: FunctionProps) {
 				<div>
 					{routes!.length > 0 ? routes!.map((item: FlightsInfo) => (
 						<div key={item.id}>{item.origin} - {item.destination} - {item.departure} - {item.arrival}</div>
-					)) : <div>No services found</div> }
+					)) : <div>{message}</div> }
 				</div>
 			</div>
 			<div className="all-flights">
 				<div>Displaying all flights data: </div>
 				{props.flights.length > 0 ? props.flights.map((item: FlightsInfo) => (
 					<div key={item.id}>{item.origin} - {item.destination} - {item.departure} - {item.arrival}</div>
-				)) : <div>No services found</div> }
+				)) : <div>No flight data present</div> }
 			</div>
 		</div>
 	);

@@ -209,7 +209,7 @@ class FlightFinder extends React.Component {
 	render() {
 		return (
 			<div id="flight-finder">
-				<h2 className="component-title"> Flight Finder </h2>
+				<h2 className="component-title"> Flight Finder - Class Component (old) </h2>
 				<div className="inputs">
 					<div className="input">
 						<Autocomplete
