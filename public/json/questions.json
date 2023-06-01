@@ -1,0 +1,44 @@
+{
+	"data": {
+		"profile": {
+			"text": "Profile",
+			"questions": [
+				{ "id": "name", "type": "input" },
+				{ "id": "number", "type": "number" },
+				{ "id": "email", "type": "email" },
+				{ "id": "status", "type": "select", "values": [
+					{"id": "citizen", "text": "Citizen"},
+					{"id": "pr", "text": "Citizen"},
+					{"id": "foreign-investor", "text": "Citizen"},
+					{"id": "work-visa", "text": "Citizen"},
+					{"id": "student", "text": "Citizen"},
+					{"id": "other", "text": "Other"}
+				]}
+			]
+		},
+		"finances": {
+			"text": "Finances",
+			"questions": [
+
+			]
+		},
+		"objectives": {
+			"text": "Objectives",
+			"questions": [
+
+			]
+		},
+		"preferences": {
+			"text": "Preferences",
+			"questions": [
+
+			]
+		},
+		"property": {
+			"text": "Property Type",
+			"questions": [
+
+			]
+		}
+	}
+}
