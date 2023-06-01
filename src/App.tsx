@@ -1,26 +1,25 @@
 import './App.scss';
 
-import React from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+import Nav from './modules/core/Nav/Nav';
 import SearchFlightsPage from './modules/search-flights/SearchFlightsPage';
+import DataDrivenForm from './modules/data-driven-forms/DataDrivenForm';
 
-class App extends React.Component {
-	constructor(props: any) {
-		super(props);
-		this.state = {};
-	}
+function App() {
+	return (
+		<div className="App">
+			<Router>
+				<Nav />
 
-	render() {
-		return (
-			<div className="app">
-				<div className="row">
-					<div className="mixed-chart">
-						<SearchFlightsPage />
-					</div>
-				</div>
-			</div>
-		);
-	}
+				<Routes>
+					<Route path="/flight-finder" element={<SearchFlightsPage />} />
+					<Route path="/forms" element={<DataDrivenForm />} />
+					<Route path="*" element={<h1>Page not found</h1>} />
+				</Routes>
+			</Router>
+		</div>
+	)
 }
 
 export default App;
