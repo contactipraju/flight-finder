@@ -5,8 +5,6 @@ function Nav() {
 	return (
 		<div>
 			<nav>
-				<Link to="/" className='site-title'> Prasada Indukuri </Link>
-
 				<ul>
 					<li>
 						<NavLink to="/flight-finder"

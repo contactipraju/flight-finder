@@ -1,0 +1,33 @@
+
+.header {
+	display: flex;
+	height: 70px;
+
+	gap: 2rem;
+	padding: 1rem;
+
+	color: white;
+	background-color: #444;
+
+	align-items: stretch;
+	justify-content: space-between;
+
+	.site-title {
+		display: flex;
+		align-items: center;
+
+		color: inherit;
+		font-size: 2rem;
+	}
+
+	.details {
+		font-size: 14px;
+		text-align: right;
+		text-decoration: none;
+
+		a {
+			color: white;
+	
+		}
+	}
+}
