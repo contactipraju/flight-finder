@@ -1,25 +1,5 @@
 
 nav {
-	display: flex;
-	height: 100px;
-
-	gap: 2rem;
-	padding: 0 1rem;
-
-	color: white;
-	background-color: #444;
-
-	align-items: stretch;
-	justify-content: space-between;
-
-	.site-title {
-		display: flex;
-		align-items: center;
-
-		color: inherit;
-		font-size: 2rem;
-	}
-
 	ul {
 		display: flex;
 		list-style: none;
@@ -28,23 +8,29 @@ nav {
 		margin: 0;
 		padding: 0;
 
-		a.hover {
-			background-color: #777;
-		}
+		li {
+			padding: 10px;
 
-		a.active {
-			background-color: #555;
-		}
+			a {
+				display: flex;
+				height: 100%;
+				padding: .35rem;
+				border-radius: 5px;
+		
+				text-decoration: none;
+				align-items: center;
+		
+				color: inherit;
+			}
 
-		a {
-			display: flex;
-			height: 100%;
-			padding: .25rem;
+			a.hover {
+				background-color: #777;
+			}
 	
-			text-decoration: none;
-			align-items: center;
-	
-			color: inherit;
+			a.active {
+				color: white;
+				background-color: #555;
+			}
 		}
 	}
 }

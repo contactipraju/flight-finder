@@ -1,12 +1,11 @@
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+
 import './Nav.scss';
 
 function Nav() {
 	return (
 		<div>
 			<nav>
-				<Link to="/" className='site-title'> Prasada Indukuri </Link>
-
 				<ul>
 					<li>
 						<NavLink to="/flight-finder"

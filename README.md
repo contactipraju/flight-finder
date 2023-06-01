@@ -4,13 +4,15 @@ Find the best trips between destinations, based on: Time, Distance, Fare, Minimu
 Using:
 * TypeScript
 * React
+* SCSS
 * Functional Components
 * React Hooks
 * Axios
+* React Router
+* Data Driven Forms
 
 ToDo:
-* React Router
-* REDUX(?)
+* REDUX (or Context?)
 * React Query
 * React Native
 
