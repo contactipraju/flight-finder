@@ -8,6 +8,13 @@ function NavBar() {
 			<nav>
 				<ul>
 					<li>
+						<NavLink to="/buyers-agency"
+							className={({isActive, isPending }) =>
+							isPending ? "pending" : isActive ? "active" : ""
+						}
+						> Buyers Agency </NavLink>
+					</li>
+					<li>
 						<NavLink to="/flight-finder"
 							className={({isActive, isPending }) =>
 							isPending ? "pending" : isActive ? "active" : ""
@@ -21,13 +28,6 @@ function NavBar() {
 						}
 						> Data-driven Forms </NavLink>
 					</li> */}
-					<li>
-						<NavLink to="/buyers-agency"
-							className={({isActive, isPending }) =>
-							isPending ? "pending" : isActive ? "active" : ""
-						}
-						> Buyers Agency </NavLink>
-					</li>
 				</ul>
 			</nav>
 		</div>
