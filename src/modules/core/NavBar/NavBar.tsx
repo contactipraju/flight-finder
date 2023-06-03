@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router-dom';
 
-import './Nav.scss';
+import './NavBar.scss';
 
-function Nav() {
+function NavBar() {
 	return (
 		<div>
 			<nav>
@@ -14,12 +14,19 @@ function Nav() {
 						}
 						> Flight Finder </NavLink>
 					</li>
-					<li>
+					{/* <li>
 						<NavLink to="/forms"
 							className={({isActive, isPending }) =>
 							isPending ? "pending" : isActive ? "active" : ""
 						}
 						> Data-driven Forms </NavLink>
+					</li> */}
+					<li>
+						<NavLink to="/buyers-agency"
+							className={({isActive, isPending }) =>
+							isPending ? "pending" : isActive ? "active" : ""
+						}
+						> Buyers Agency </NavLink>
 					</li>
 				</ul>
 			</nav>
@@ -27,4 +34,4 @@ function Nav() {
 	)
 }
 
-export default Nav;
+export default NavBar;

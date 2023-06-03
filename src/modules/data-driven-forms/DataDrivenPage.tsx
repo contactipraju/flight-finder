@@ -1,8 +1,8 @@
-import './DataDrivenForm.scss';
+import './DataDrivenPage.scss';
 
-import { FormRenderer, componentTypes } from '@data-driven-forms/react-form-renderer';
-import { componentMapper } from '@data-driven-forms/mui-component-mapper';
-import FormTemplate from '@data-driven-forms/mui-component-mapper/form-template';
+import { componentTypes } from '@data-driven-forms/react-form-renderer';
+
+import DataDrivenForm from './components/DataDrivenForm/DataDrivenForm';
 
 const schema = {
 	fields: [
@@ -35,26 +35,17 @@ const schema = {
 	]
 }
 
-const DataDrivenForm = () => {
-	const dataReady = (values: any) => {
-		console.log(values);
-	};
-
+const DataDrivenPage = () => {
 	return (
-		<div id="data-driven-form">
+		<div id="data-driven-page">
 			<h2>Data Driven Forms</h2>
 			<div className="desc"> Form Elements generated using JSON data </div>
 
 			<div className="content">
-				<FormRenderer
-					schema={schema}
-					componentMapper={componentMapper}
-					FormTemplate={FormTemplate}
-					onSubmit={(values) => dataReady(values)}
-				/>
+				<DataDrivenForm data={schema} />
 			</div>
 		</div>
 	)
 }
 
-export default DataDrivenForm;
+export default DataDrivenPage;

@@ -13,8 +13,6 @@ Using:
 
 ToDo:
 * REDUX (or Context?)
-* React Query
-* React Native
 
 # App Deployed at
 https://flight-finder-360.web.app
