@@ -1,6 +1,6 @@
 import './App.scss';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 import Header from './modules/core/Header/Header';
 import NavBar from './modules/core/NavBar/NavBar';
@@ -20,7 +20,7 @@ function App() {
 					<Route path="/flight-finder" element={<SearchFlightsPage />} />
 					<Route path="/forms" element={<DataDrivenPage />} />
 					<Route path="/buyers-agency" element={<FormsInStepper />} />
-					<Route path="*" element={<h1>Page not found</h1>} />
+					<Route path="*" element={<Navigate to="/buyers-agency" />} />
 				</Routes>
 			</Router>
 		</div>
