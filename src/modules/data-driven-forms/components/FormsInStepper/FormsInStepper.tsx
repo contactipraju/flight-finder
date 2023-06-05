@@ -80,10 +80,14 @@ export default function FormsInStepper() {
 	
 	return (
 		<div id="forms-in-stepper">
-			<h2> {meta.header} </h2>
-			<div className="desc">
-				{meta.desc}
-			</div>
+			{meta && meta.header ? (<h2> {meta.header} </h2>) : null }
+
+			{meta && meta.desc
+			? (
+				<div className="desc">
+					{meta.desc}
+				</div>
+			) : null }
 
 			<div className="content">
 				<Box sx={{ width: '100%' }}>
