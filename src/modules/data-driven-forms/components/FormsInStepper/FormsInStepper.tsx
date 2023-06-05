@@ -20,11 +20,13 @@ export default function FormsInStepper() {
 
 	const [questions, setQuestions] = useState([]);
 	const [steps, setSteps] = React.useState<string[]>([]);
+	const [meta, setMeta] = React.useState<any>({});
 
 	useEffect(() => {
 		getQuestions().then((resp) => {
 			console.log(resp.data);
 			setQuestions(resp.data);
+			setMeta(resp.meta);
 			const titles: string[] = resp.data.map((item: any) => item['name']);
 			setSteps(titles);
 		})
@@ -78,9 +80,9 @@ export default function FormsInStepper() {
 	
 	return (
 		<div id="forms-in-stepper">
-			<h2> Buyers agency application </h2>
+			<h2> {meta.header} </h2>
 			<div className="desc">
-				Fill-in as much information as possible. Your information will not be shared with any 3rd party vendors.
+				{meta.desc}
 			</div>
 
 			<div className="content">
