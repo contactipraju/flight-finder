@@ -1,4 +1,8 @@
 {
+	"meta": {
+		"header": "Welcome to Vision 21",
+		"desc": "Fill-in as much information as possible. Your information will not be shared with any 3rd party vendors."
+	},
 	"data": [
 		{
 			"id": "profile", "name": "Profile", "desc": "Your details",
