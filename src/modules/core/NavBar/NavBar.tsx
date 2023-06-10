@@ -8,18 +8,18 @@ function NavBar() {
 			<nav>
 				<ul>
 					<li>
-						<NavLink to="/buyers-agency"
+						<NavLink to="/search"
 							className={({isActive, isPending }) =>
 							isPending ? "pending" : isActive ? "active" : ""
 						}
-						> Buyers Agency </NavLink>
+						> Search </NavLink>
 					</li>
 					<li>
-						<NavLink to="/flight-finder"
+						<NavLink to="/admin"
 							className={({isActive, isPending }) =>
 							isPending ? "pending" : isActive ? "active" : ""
 						}
-						> Flight Finder </NavLink>
+						> Admin </NavLink>
 					</li>
 					{/* <li>
 						<NavLink to="/forms"

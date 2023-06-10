@@ -57,8 +57,8 @@ function FlightFinderFunctional(props: FunctionProps) {
 
 	return (
 		<div id="flight-finder">
-			<h2 className="component-title"> Flight Finder </h2>
-			<div className="desc"> Find shortest routes between destinations using Breadh First Search (bfs)</div>
+			<h2 className="component-title"> Search Flights </h2>
+			<div className="desc"> Find shortest/quickest/economical routes between destinations using Breadh First Search (bfs)</div>
 			<div className="inputs">
 				<div className="input">
 					<Autocomplete
