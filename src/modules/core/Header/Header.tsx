@@ -1,19 +1,28 @@
 import { Link } from 'react-router-dom';
-
 import './Header.scss';
 
+import { useContext } from 'react';
+import { ProfileContext, IProfileContext } from '../../contexts/ProfileContext';
+
 function Header() {
-	return (
+    const { isLoading, profile } = useContext(ProfileContext) as IProfileContext;
+
+    return (
 		<div className='header'>
-			<Link to="/" className='site-title'> Prasada Indukuri </Link>
-			<div className='details'>
-				<div>+61 45 8866 586</div>
-				<div>contactipraju@gmail.com</div>
-				<div><a href='https://linkedin.com/in/prasadaraju'>linkedin.com/in/prasadaraju</a></div>
-				<div><a href='https://github.com/contactipraju'>https://github.com/contactipraju</a></div>
-			</div>
+			<Link to="/" className='site-title'> Flight Finder </Link>
+			{
+				!isLoading && profile.name && profile.name.length && 
+				<div className='details'>
+					<div><h3>{profile.name}</h3></div>
+					<div>{profile.contact}</div>
+					<div>{profile.email}</div>
+					<div><a href={profile.linkedin}>{profile.linkedin}</a></div>
+					<div><a href={profile.github}>{profile.github}</a></div>
+				</div>
+			}
+			{isLoading && <div>Loading...</div>}
 		</div>
-	)
+    )
 }
 
 export default Header;

@@ -7,22 +7,24 @@ import NavBar from './modules/core/NavBar/NavBar';
 
 import SearchFlightsPage from './modules/search-flights/SearchFlightsPage';
 import DataDrivenPage from './modules/data-driven-forms/DataDrivenPage';
-import FormsInStepper from './modules/data-driven-forms/components/FormsInStepper/FormsInStepper';
+import { ProfileContextProvider } from './modules/contexts/ProfileContext';
 
 function App() {
 	return (
 		<div className="App">
-			<Router>
-				<Header />
-				<NavBar />
+			<ProfileContextProvider>
+				<Router>
+					<Header />
+					<NavBar />
 
-				<Routes>
-					<Route path="/flight-finder" element={<SearchFlightsPage />} />
-					<Route path="/forms" element={<DataDrivenPage />} />
-					<Route path="/buyers-agency" element={<FormsInStepper />} />
-					<Route path="*" element={<Navigate to="/buyers-agency" />} />
-				</Routes>
-			</Router>
+					<Routes>
+						<Route path="/search" element={<SearchFlightsPage />} />
+						<Route path="/admin" element={<DataDrivenPage />} />
+						{/* <Route path="/buyers-agency" element={<FormsInStepper />} /> */}
+						<Route path="*" element={<Navigate to="/search" />} />
+					</Routes>
+				</Router>
+			</ProfileContextProvider>
 		</div>
 	)
 }
