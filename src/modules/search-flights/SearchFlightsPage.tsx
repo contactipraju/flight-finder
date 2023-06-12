@@ -24,8 +24,7 @@ function SearchFlightsPage() {
 
 	return (
 		<div>
-			{/* <FlightFinder /> */}
-			<FlightFinderFunctional flights= {flights} destinations={destinations}/>
+			<FlightFinderFunctional flights={flights} destinations={destinations}/>
 		</div>
 	);
 }
