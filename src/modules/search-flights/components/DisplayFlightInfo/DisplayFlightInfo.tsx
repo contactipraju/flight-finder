@@ -2,7 +2,7 @@ import './DisplayFlightInfo.scss';
 import { format } from "date-fns";
 
 function DisplayFlightInfo(props: any) {
-	const {id, origin, destination, departure, arrival} = props.item;
+	const {origin, destination, departure, arrival} = props.item;
 
 	return (
 		<div className='flight-container'>
