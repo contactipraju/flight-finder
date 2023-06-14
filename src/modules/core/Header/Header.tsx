@@ -5,9 +5,9 @@ import { useContext } from 'react';
 import { ProfileContext, IProfileContext } from '../../contexts/ProfileContext';
 
 function Header() {
-    const { isLoading, profile } = useContext(ProfileContext) as IProfileContext;
+	const { isLoading, profile } = useContext(ProfileContext) as IProfileContext;
 
-    return (
+	return (
 		<div className='header'>
 			<Link to="/" className='site-title'> Flight Finder </Link>
 			{
@@ -22,7 +22,7 @@ function Header() {
 			}
 			{isLoading && <div>Loading...</div>}
 		</div>
-    )
+	)
 }
 
 export default Header;

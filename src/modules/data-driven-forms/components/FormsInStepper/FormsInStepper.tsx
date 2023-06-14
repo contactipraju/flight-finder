@@ -77,7 +77,7 @@ export default function FormsInStepper() {
 		setActiveStep(0);
 		setCompleted({});
 	};
-	
+
 	return (
 		<div id="forms-in-stepper">
 			{meta && meta.header ? (<h2> {meta.header} </h2>) : null }

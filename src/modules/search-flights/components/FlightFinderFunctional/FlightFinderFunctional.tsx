@@ -91,14 +91,14 @@ function FlightFinderFunctional(props: FunctionProps) {
 			<div className="results">
 				<div>
 					{routes!.length > 0 ? routes!.map((item: FlightsInfo) => (
-						<DisplayFlightInfo item={item}></DisplayFlightInfo>
+						<DisplayFlightInfo key={item.id} item={item}></DisplayFlightInfo>
 					)) : <div>{message}</div> }
 				</div>
 			</div>
 			<div className="all-flights">
 				<div>Displaying all flights data: </div>
 				{props.flights.length > 0 ? props.flights.map((item: FlightsInfo) => (
-					<DisplayFlightInfo item={item}></DisplayFlightInfo>
+					<DisplayFlightInfo key={item.id} item={item}></DisplayFlightInfo>
 				)) : <div>No flight data present</div> }
 			</div>
 		</div>
