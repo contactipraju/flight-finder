@@ -2,12 +2,12 @@ import './App.scss';
 
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
-import Header from './modules/core/Header/Header';
-import NavBar from './modules/core/NavBar/NavBar';
+import Header from './core/Header/Header';
+import NavBar from './core/NavBar/NavBar';
 
-import SearchFlightsPage from './modules/search-flights/SearchFlightsPage';
-import DataDrivenPage from './modules/data-driven-forms/DataDrivenPage';
-import { ProfileContextProvider } from './modules/contexts/ProfileContext';
+import SearchFlightsPage from './pages/search-flights/SearchFlightsPage';
+import AdminPage from './pages/admin/AdminPage';
+import { ProfileContextProvider } from './contexts/ProfileContext';
 
 function App() {
 	return (
@@ -19,8 +19,7 @@ function App() {
 
 					<Routes>
 						<Route path="/search" element={<SearchFlightsPage />} />
-						<Route path="/admin" element={<DataDrivenPage />} />
-						{/* <Route path="/buyers-agency" element={<FormsInStepper />} /> */}
+						<Route path="/admin" element={<AdminPage />} />
 						<Route path="*" element={<Navigate to="/search" />} />
 					</Routes>
 				</Router>

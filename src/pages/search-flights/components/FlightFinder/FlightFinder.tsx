@@ -8,9 +8,9 @@ import { FlightsInfo, FunctionProps } from "../../SearchFlights.interfaces";
 import { findRoutes } from "../../SearchFlights.service";
 import DisplayFlightInfo from "../DisplayFlightInfo/DisplayFlightInfo";
 
-import './FlightFinderFunctional.scss';
+import './FlightFinder.scss';
 
-function FlightFinderFunctional(props: FunctionProps) {
+function FlightFinder(props: FunctionProps) {
 
 	const myDestinations = props.destinations.map(dest => ({ ...dest, label: dest.id + ' - ' + dest.name }));
 	const [origin, setOrigin] = useState('');
@@ -105,4 +105,4 @@ function FlightFinderFunctional(props: FunctionProps) {
 	);
 }
 
-export default FlightFinderFunctional;
+export default FlightFinder;

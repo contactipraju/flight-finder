@@ -6,7 +6,7 @@ import { componentMapper } from '@data-driven-forms/mui-component-mapper';
 import { componentTypes } from '@data-driven-forms/react-form-renderer';
 
 import { useContext } from 'react';
-import { ProfileContext, IProfileContext } from '../../../contexts/ProfileContext';
+import { ProfileContext, IProfileContext } from './../../../../contexts/ProfileContext';
 
 const DataDrivenForm = (props: any) => {
 	const { isLoading, profile, setProfile } = useContext(ProfileContext) as IProfileContext;
