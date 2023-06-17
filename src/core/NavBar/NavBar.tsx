@@ -21,13 +21,6 @@ function NavBar() {
 						}
 						> Admin </NavLink>
 					</li>
-					{/* <li>
-						<NavLink to="/forms"
-							className={({isActive, isPending }) =>
-							isPending ? "pending" : isActive ? "active" : ""
-						}
-						> Data-driven Forms </NavLink>
-					</li> */}
 				</ul>
 			</nav>
 		</div>

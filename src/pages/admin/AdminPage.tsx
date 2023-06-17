@@ -1,10 +1,10 @@
-import './DataDrivenPage.scss';
+import './AdminPage.scss';
 
 import DataDrivenForm from './components/DataDrivenForm/DataDrivenForm';
 
-const DataDrivenPage = () => {
+const AdminPage = () => {
 	return (
-		<div id="data-driven-page">
+		<div id="admin-page">
 			<h2>Contact Information</h2>
 			<div className="desc">  </div>
 
@@ -15,4 +15,4 @@ const DataDrivenPage = () => {
 	)
 }
 
-export default DataDrivenPage;
+export default AdminPage;

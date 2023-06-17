@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import { getFlights, getDestinations } from "./SearchFlights.service";
 
-import FlightFinderFunctional from './components/FlightFinderFunctional/FlightFinderFunctional';
+import FlightFinder from './components/FlightFinder/FlightFinder';
 
 import './SearchFlightsPage.scss';
 
@@ -24,7 +24,7 @@ function SearchFlightsPage() {
 
 	return (
 		<div>
-			<FlightFinderFunctional flights={flights} destinations={destinations}/>
+			<FlightFinder flights={flights} destinations={destinations}/>
 		</div>
 	);
 }
