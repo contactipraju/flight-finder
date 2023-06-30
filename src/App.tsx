@@ -7,6 +7,8 @@ import NavBar from './core/NavBar/NavBar';
 
 import SearchFlightsPage from './pages/search-flights/SearchFlightsPage';
 import AdminPage from './pages/admin/AdminPage';
+import PortfolioPage from './pages/portfolio/PortfolioPage';
+
 import { ProfileContextProvider } from './contexts/ProfileContext';
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
 					<Routes>
 						<Route path="/search" element={<SearchFlightsPage />} />
 						<Route path="/admin" element={<AdminPage />} />
+						<Route path="/portfolio" element={<PortfolioPage />} />
 						<Route path="*" element={<Navigate to="/search" />} />
 					</Routes>
 				</Router>

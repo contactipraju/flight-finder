@@ -1,0 +1,86 @@
+#portfolio {
+	.project {
+		display: flex;
+		flex-direction: row;
+
+		width: 800px;
+		height: 310px;
+
+		padding: 8px;
+		text-align: left;
+
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 50px;
+
+		border: 1px solid #444;
+
+		.details {
+			width: 50%;
+			padding: 4px;
+			position: relative;
+
+			.type {
+				font-style: normal;
+				text-transform: uppercase;
+			}
+	
+			.name {
+				font-size: x-large;
+				font-weight: bold;
+			}
+
+			.location {
+				padding: 6px;
+				padding-left: 26px;
+
+				margin-left: -10px;
+
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+	
+			.financials {
+				margin-top: 10px;
+				margin-left: 40px;
+	
+				th.text, td.text {
+					text-transform: capitalize;
+				}
+				th.amount, td.amount {
+					text-align: right;
+				}
+			}
+
+			.success {
+				position: absolute;
+				left: 0px; bottom: 0px;
+				margin-left: -38px;
+				color: green;
+
+				ul {
+					list-style: none;
+					list-style-type: none;
+
+					li {
+						float: left;
+						margin-right: 10px;
+					}
+				}
+					
+				ul li:before {
+					content: '✓';
+					margin-right: 3px;
+				}
+			}
+		}
+
+		.images {
+			width: 50%;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position-x: center;
+			background-position-y: center;
+		}
+	}
+}
