@@ -8,9 +8,9 @@
 			"address": "6 Speargrass St, Denham Court NSW",
 			"images": ["images/portfolio/11.png"],
 			"financials": {
-				"purchase_cost": "720,000",
+				"purchase_cost": "700,000",
 				"current_value": "1,300,000",
-				"current_weekly_rent": "930"
+				"current_weekly_rent": "880"
 			},
 			"features": ["Great community", "Close to Shopping", "Close to Public Transport"],
 			"success": ["Appreciation", "Positive gearing"]
@@ -23,7 +23,7 @@
 			"address": "Ponds",
 			"images": ["images/portfolio/12.png"],
 			"financials": {
-				"purchase_cost": "920,000",
+				"purchase_cost": "1,020,000",
 				"current_value": "1,600,000"
 			},
 			"features": ["Great Suburb", "Most family-friendly location"],
@@ -38,7 +38,7 @@
 			"images": ["images/portfolio/13.png"],
 			"financials": {
 				"purchase_cost": "370,000",
-				"current_value": "630,000",
+				"current_value": "660,000",
 				"current_weekly_rent": "550"
 			},
 			"features": ["40 min to Melbourne CBD", "Great views"],
@@ -52,8 +52,8 @@
 			"address": "Melton South",
 			"images": ["images/portfolio/14.png"],
 			"financials": {
-				"purchase_cost": "130,000",
-				"sold_price": "230,000"
+				"purchase_cost": "150,000",
+				"sold_price": "225,000"
 			},
 			"features": ["30 min to Melbourne CBD"],
 			"success": []
@@ -67,9 +67,9 @@
 			"images": ["images/portfolio/15.png"],
 			"financials": {
 				"purchase_cost": "720,000",
-				"holding_costs": "200,000",
-				"development_costs": "50,000",
-				"sold_cost": "1,400,000"
+				"holding_costs": "60,000",
+				"development_costs": "40,000",
+				"sold_cost": "1,450,000"
 			},
 			"features": [],
 			"success": ["DA approved for 7 Additional Townhouses"]
@@ -82,7 +82,7 @@
 			"address": "Schofields",
 			"images": ["images/portfolio/16.png"],
 			"financials": {
-				"purchase_cost": "295,000",
+				"purchase_cost": "300,000",
 				"current_value": "420,000",
 				"current_weekly_rent": "440"
 			},
@@ -92,14 +92,14 @@
 		{
 			"id": 17,
 			"type": "Development Opportunity",
-			"name": "Land-banked in one of the most sought-after locations",
+			"name": "Huge Development potential",
 			"location": "Victoria",
 			"address": "6 Candeloro St, Victoria",
 			"images": ["images/portfolio/17.png"],
 			"financials": {
-				"purchase_cost": "1,290,000",
+				"purchase_cost": "1,200,000",
 				"estimated_sale_price": "1,800,000",
-				"current_weekly_rent": "500"
+				"current_weekly_rent": "510"
 			},
 			"features": ["High-density zoned", "Town-houses potential", "Close to a regional town centre"],
 			"success": ["DA in-progress for multiple Town-houses"]
@@ -114,8 +114,8 @@
 			"financials": {
 				"purchased_in": "March, 2022",
 				"purchase_cost": "2,650,000",
-				"current_value": "3,000,000",
-				"current_weekly_rent": "500"
+				"current_value": "3,100,000",
+				"rental_potential": "1500"
 			},
 			"features": ["Walking distance to Reputed High-School", "Sought-after Suburb"],
 			"success": ["Secured property lower than the market rate"]
@@ -123,13 +123,13 @@
 		{
 			"id": 19,
 			"type": "Multi-option development site",
-			"name": "Subdivide, build new house, sell/keep it",
+			"name": "DP approved and subdivided",
 			"location": "Perth, WA",
 			"address": "Perth, WA",
 			"images": ["images/portfolio/19.png"],
 			"financials": {
 				"purchased_in": "March, 2022",
-				"purchase_cost": "500,000",
+				"purchase_cost": "582,000",
 				"gross_realization": "132,355",
 				"current_weekly_rent": "500"
 			},
