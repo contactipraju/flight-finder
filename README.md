@@ -8,11 +8,8 @@ Using:
 * Functional Components
 * React Hooks
 * Axios
-* React Router
 * Data Driven Forms
 
-ToDo:
-* REDUX (or Context?)
 
 # App Deployed at
 https://flight-finder-360.web.app
